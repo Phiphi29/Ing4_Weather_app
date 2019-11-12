@@ -38,7 +38,7 @@ class Forecast extends Component {
 
   // Fonction appelé lors du click sur le bouton
   // Appel la fonction recu en paramètre de App
-  removeCity = () => {
+  removeCityFromForecast = () => {
     const { removeCity, city } = this.props;
     removeCity(city);
   };
@@ -51,7 +51,7 @@ class Forecast extends Component {
       <div>
         <h2 className="forecast-header">{city}</h2>
         <div className="remove-btn-container">
-          <button type="button" onClick={this.removeCity}>
+          <button type="button" onClick={this.removeCityFromForecast}>
             Enlever cette ville
           </button>
         </div>
